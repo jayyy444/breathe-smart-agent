@@ -8,6 +8,7 @@ import Chat from "./pages/Chat";
 import Tracker from "./pages/Tracker";
 import Actions from "./pages/Actions";
 import Profile from "./pages/Profile";
+import ApiTest from "./pages/ApiTest";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,14 +19,15 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/tracker" element={<Tracker />} />
-          <Route path="/actions" element={<Actions />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
+        <Route path="/tracker" element={<Tracker />} />
+        <Route path="/actions" element={<Actions />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/api-test" element={<ApiTest />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
