@@ -1,1 +1,4 @@
 project_id = "yunzeggroreycnzlhhje"
+
+[functions.test-weather-api]
+verify_jwt = false
